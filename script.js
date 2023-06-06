@@ -111,7 +111,6 @@ const nextSlide = function () {
     curSlide++;
   }
   goToSlide(curSlide);
-  // autoplay(true);
   activeDot(curSlide);
 };
 const prevSlide = function () {
@@ -121,13 +120,12 @@ const prevSlide = function () {
     curSlide--;
   }
   goToSlide(curSlide);
-  // autoplay(true);
   activeDot(curSlide);
 };
 // GO TO NEXT SLIDE
-btnRight.addEventListener("click", nextSlide);
-// GO TO PREVIOUS SLIDE
-btnLeft.addEventListener("click", prevSlide);
+// btnRight.addEventListener("click", nextSlide);
+// // GO TO PREVIOUS SLIDE
+// btnLeft.addEventListener("click", prevSlide);
 let repeater;
 
 const autoplay = function (r) {
@@ -138,7 +136,7 @@ const autoplay = function (r) {
     clearInterval(repeater);
   }
 };
-// autoplay(true);
+autoplay(true);
 
 /////////////////
 const activeDot = function (slide) {
