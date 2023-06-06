@@ -1,0 +1,59 @@
+//////////////////////////////////////////
+/// RESPONSIVE
+/// Scrence 1 - >= 1200px
+$bp-largest: 75em;
+/// Scrence 2 - >= 1000px < 1200px
+$bp-large: 50em;
+/// Scrence 2 - >= 800px
+$bp-medium: 37.5em;
+/// Scrence 2 - < 800px
+//////////////////////////////
+html {
+  font-size: 62.5%;
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+}
+body {
+  box-sizing: border-box;
+  display: grid;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  overflow: auto;
+}
+
+.container {
+  margin: 2rem;
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  @media only screen and (max-width: $bp-largest) {
+    margin: 0;
+  }
+}
+.section__linebreak {
+  &--text {
+    padding-bottom: 5rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    color: #777;
+    span {
+      position: relative;
+      color: #555555;
+      &::after {
+        content: "";
+        display: block;
+        border: 2px solid var(--orange--light);
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 5rem;
+      }
+    }
+  }
+}
+.hidden {
+  display: none;
+}

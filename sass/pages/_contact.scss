@@ -1,0 +1,26 @@
+@use "../abstract/" as *;
+.contact {
+  width: 100%;
+  margin-bottom: 5rem;
+
+  &__img {
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+  &__row {
+    margin: 0 auto;
+    max-width: 75%;
+  }
+}
+.book {
+  background-image: linear-gradient(
+      to right,
+      #cfd9df 0%,
+      #e2ebf0a3 40%,
+      transparent 50%
+    ),
+    url(/assets/img/booking.avif);
+  background-size: cover;
+  background-position: top;
+}

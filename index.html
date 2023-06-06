@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="/script.js"></script>
+    <title>VietNamTravel</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__logo-box">
+          <img
+            src="../assets/img/headerlogo.png"
+            alt="headerlogo"
+            class="header__logo"
+          />
+        </div>
+        <div class="header__textbox">
+          <h1 class="heading-primary">Enjoy your next Holiday</h1>
+          <p class="heading-sub">With our best promotions</p>
+        </div>
+        <a href="#section--1" class="btn btn-white btn-animated"
+          >Discover our tours</a
+        >
+      </header>
+      <main>
+        <section class="feature" id="section--1">
+          <p class="feature__proposals">OUR PROPOSALS</p>
+          <div class="section__linebreak">
+            <h2 class="section__linebreak--text feature__linebreak">
+              OUR <span>OVERSEAS</span> DESTINATIONS
+            </h2>
+          </div>
+          <div class="feature__cards">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__detail card__detail--1">
+                  <div class="card__text">
+                    <img
+                      src="../assets/img/arch.png"
+                      alt=""
+                      class="card__text--logo"
+                    />
+                    <p class="card__text--location">Europe</p>
+                    <p class="card__text--pakages">3 PACKAGES</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card__side card__side--back">
+                <div class="card__side--back--infor">
+                  <p class="card__text--location">Europe</p>
+                  <ul>
+                    <li class="card__text--pakages">Berlin</li>
+                    <li class="card__text--pakages">Amsterdam</li>
+                    <li class="card__text--pakages">Tuscany</li>
+                  </ul>
+                  <a href="#section--2" class="btn">BOOK NOW</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__detail card__detail--2">
+                  <div class="card__text">
+                    <img
+                      src="../assets/img/buddha.png"
+                      alt=""
+                      class="card__text--logo"
+                    />
+                    <p class="card__text--location">ThaiLandia</p>
+                    <p class="card__text--pakages">1 PACKAGES</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card__side card__side--back">
+                <div class="card__side--back--infor">
+                  <p class="card__text--location">ThaiLandia</p>
+                  <ul>
+                    <li class="card__text--pakages">Phuket</li>
+                  </ul>
+                  <a href="#section--2" class="btn">BOOK NOW</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__detail card__detail--3">
+                  <div class="card__text">
+                    <img
+                      src="../assets/img/torii-gate.png"
+                      alt=""
+                      class="card__text--logo"
+                    />
+                    <p class="card__text--location">Japan</p>
+                    <p class="card__text--pakages">2 PACKAGES</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card__side card__side--back">
+                <div class="card__side--back--infor">
+                  <p class="card__text--location">Japan</p>
+                  <ul>
+                    <li class="card__text--pakages">Tokyo</li>
+                    <li class="card__text--pakages">Hokkaido</li>
+                  </ul>
+                  <a href="#section--2" class="btn">BOOK NOW</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__detail card__detail--4">
+                  <div class="card__text">
+                    <img
+                      src="../assets/img/pisa.png"
+                      alt=""
+                      class="card__text--logo"
+                    />
+                    <p class="card__text--location">Italy</p>
+                    <p class="card__text--pakages">1 PACKAGES</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card__side card__side--back">
+                <div class="card__side--back--infor">
+                  <p class="card__text--location">Italy</p>
+                  <ul>
+                    <li class="card__text--pakages">Tuscany</li>
+                  </ul>
+                  <a href="#section--2" class="btn">BOOK NOW</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__detail card__detail--5">
+                  <div class="card__text">
+                    <img
+                      src="../assets/img/london-eye.png"
+                      alt=""
+                      class="card__text--logo"
+                    />
+                    <p class="card__text--location">Netherlands</p>
+                    <p class="card__text--pakages">1 PACKAGES</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card__side card__side--back">
+                <div class="card__side--back--infor">
+                  <p class="card__text--location">Netherlands</p>
+                  <ul>
+                    <li class="card__text--pakages">Amsterdam</li>
+                  </ul>
+                  <a href="#section--2" class="btn">BOOK NOW</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__detail card__detail--6">
+                  <div class="card__text">
+                    <img
+                      src="../assets/img/golden-gate.png"
+                      alt=""
+                      class="card__text--logo"
+                    />
+                    <p class="card__text--location">United states</p>
+                    <p class="card__text--pakages">1 PACKAGES</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card__side card__side--back">
+                <div class="card__side--back--infor">
+                  <p class="card__text--location">United states</p>
+                  <ul>
+                    <li class="card__text--pakages">New York</li>
+                  </ul>
+                  <a href="#section--2" class="btn">BOOK NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="domestic">
+          <button class="slidebtn slidebtn--1">L</button>
+          <button class="slidebtn slidebtn--2">R</button>
+          <div class="dots">
+            <div class="dots__dot dots__dot--active" data-slide="0"></div>
+            <div class="dots__dot" data-slide="1"></div>
+            <div class="dots__dot" data-slide="2"></div>
+          </div>
+          <div class="section__linebreak">
+            <h2 class="section__linebreak--text">
+              Discover our <span>domestic</span> tour
+            </h2>
+          </div>
+          <div class="domestic__slideshow">
+            <div class="domestic__slideshow--container">
+              <div class="domestic__slideshow--text">
+                <h3 class="domestic__slideshow--text--location">Vung Tau</h3>
+                <p class="domestic__slideshow--text--description">
+                  Lorem ipsum dolor sit amet, consectetur adip iscing elit.
+                  Proin rhoncus urna dictum neque molestie ultricies mauris ac.
+                  Lorem ipsum dolor sit amet, consectetur adip iscing elit.
+                  Proin rhoncus urna dictum neque molestie ultricies mauris ac.
+                </p>
+                <p class="domestic__slideshow--text--description">
+                  Lorem ipsum dolor sit amet, consectetur adip iscing elit.
+                  Proin rhoncus urna dictum neque molestie ultricies mauris ac.
+                </p>
+                <a href="#section--2" class="btn">BOOK NOW</a>
+              </div>
+              <img
+                class="domestic__slideshow--picture"
+                src="/assets/img/vungtau.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="domestic__slideshow--container">
+              <div class="domestic__slideshow--text">
+                <h3 class="domestic__slideshow--text--location">Da Lat</h3>
+                <p class="domestic__slideshow--text--description">
+                  Lorem ipsum dolor sit amet, consectetur adip iscing elit.
+                  Proin rhoncus urna dictum neque molestie ultricies mauris ac.
+                  Lorem ipsum dolor sit amet, consectetur adip iscing elit.
+                  Proin rhoncus urna dictum neque molestie ultricies mauris ac.
+                </p>
+                <p class="domestic__slideshow--text--description">
+                  Lorem ipsum dolor sit amet, consectetur adip iscing elit.
+                  Proin rhoncus urna dictum neque molestie ultricies mauris ac.
+                </p>
+                <a href="#section--2" class="btn">BOOK NOW</a>
+              </div>
+              <img
+                class="domestic__slideshow--picture"
+                src="/assets/img/dalat.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="domestic__slideshow--container">
+              <div class="domestic__slideshow--text">
+                <h3 class="domestic__slideshow--text--location">Nha Trang</h3>
+                <p class="domestic__slideshow--text--description">
+                  Lorem ipsum dolor sit amet, consectetur adip iscing elit.
+                  Proin rhoncus urna dictum neque molestie ultricies mauris ac.
+                  Lorem ipsum dolor sit amet, consectetur adip iscing elit.
+                  Proin rhoncus urna dictum neque molestie ultricies mauris ac.
+                </p>
+                <p class="domestic__slideshow--text--description">
+                  Lorem ipsum dolor sit amet, consectetur adip iscing elit.
+                  Proin rhoncus urna dictum neque molestie ultricies mauris ac.
+                </p>
+                <a href="#section--2" class="btn">BOOK NOW</a>
+              </div>
+              <img
+                class="domestic__slideshow--picture"
+                src="/assets/img/nhatrang.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+        <section class="story">
+          <div class="section__linebreak">
+            <h2 class="section__linebreak--text">
+              WHAT <span>OUR CLIENTS</span> SAY ABOUT <span>US</span>
+            </h2>
+            <div class="story__cards">
+              <div class="story__card story__card--1">
+                <div class="story__card__content">
+                  <h2 class="story__card__content--title">Mikasa Akerman</h2>
+                  <p class="story__card__content--text">
+                    Lorem ipsum dolor sit amet consur adipisicing elit. Qui
+                    quibusdam consect officiis repellat id.
+                  </p>
+                </div>
+              </div>
+
+              <div class="story__card story__card--2">
+                <div class="story__card__content">
+                  <h2 class="story__card__content--title">Mike Ross</h2>
+                  <p class="story__card__content--text">
+                    Lorem ipsum dolor sit amet consur adipisicing elit. Qui
+                    quibusdam consect officiis repellat id.
+                  </p>
+                </div>
+              </div>
+
+              <div class="story__card story__card--3">
+                <div class="story__card__content">
+                  <h2 class="story__card__content--title">Lori Griffin</h2>
+                  <p class="story__card__content--text">
+                    Lorem ipsum dolor sit amet consur adipisicing elit. Qui
+                    quibusdam consect officiis repellat id.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contact" id="section--2">
+          <div class="section__linebreak">
+            <h2 class="section__linebreak--text">
+              start <span>your booking</span> now
+            </h2>
+          </div>
+          <div class="contact__row">
+            <div class="book">
+              <div class="book__form">
+                <form action="#" class="form">
+                  <h3 class="form__heading">GET IN TOUCH</h3>
+                  <div class="form__group">
+                    <input
+                      type="text"
+                      class="form__input"
+                      placeholder="Full Name"
+                      id="name"
+                      required
+                    />
+                    <label for="name" class="form__label">Full name</label>
+                  </div>
+
+                  <div class="form__group">
+                    <input
+                      type="email"
+                      class="form__input"
+                      placeholder="Email address"
+                      id="email"
+                      required
+                    />
+                    <label for="email" class="form__label">Email</label>
+                  </div>
+
+                  <div class="form__group">
+                    <input
+                      type="text"
+                      class="form__input"
+                      placeholder="Subject"
+                      id="subject"
+                      required
+                    />
+                    <label for="subject" class="form__label">Subject</label>
+                  </div>
+
+                  <div class="form__group">
+                    <textarea
+                      class="form__input"
+                      name="message"
+                      id="message"
+                      cols="30"
+                      rows="10"
+                      placeholder="Message"
+                      spellcheck="false"
+                    ></textarea>
+                    <label for="message" class="form__label">Message</label>
+                  </div>
+                  <div class="form__group">
+                    <button class="form__btn">Send &rarr;</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__contact">
+            <img
+              src="../assets/img/headerlogo.png"
+              alt="headerlogo"
+              class="footer__logo"
+            />
+            <ul class="footer__list">
+              <li class="footer__item footer__text footer__text--header">
+                Contact us :
+              </li>
+              <li class="footer__item footer__text">
+                <svg class="footer__icon">
+                  <use xlink:href="/assets/icomoon/sprite.svg#icon-chat"></use>
+                </svg>
+                <a href="mailto:dngocson12@gmail.com">
+                  :dngocson12@gmail.com
+                </a>
+              </li>
+
+              <li class="footer__item footer__text">
+                <svg class="footer__icon">
+                  <use
+                    xlink:href="/assets/icomoon/sprite.svg#icon-old-phone"
+                  ></use>
+                </svg>
+                <a href="tel:+84942885082"> :+84942885082 </a>
+              </li>
+
+              <li class="footer__item footer__text">
+                <svg class="footer__icon">
+                  <use
+                    xlink:href="/assets/icomoon/sprite.svg#icon-location"
+                  ></use>
+                </svg>
+                <p class="open__map open__map--a1">
+                  :No. 40 Ba Huyen Thanh Quan, District 3, Ho Chi Minh City
+                </p>
+              </li>
+
+              <li class="footer__item footer__text">
+                <svg class="footer__icon">
+                  <use
+                    xlink:href="/assets/icomoon/sprite.svg#icon-location"
+                  ></use>
+                </svg>
+                <p class="open__map open__map--a2">
+                  :No. 4 Le Duan, District 1, Ho Chi Minh City
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__map"></div>
+        </div>
+      </footer>
+      <div class="popup hidden">
+        <div class="popup__content">
+          <div class="popup__content__left">
+            <img
+              src="../assets/img/headerlogo.png"
+              alt="headerlogo"
+              class="popup__logo"
+            />
+            <div class="popup__text">
+              <h3>OUR LOCATION:</h3>
+              <p class="l1" data-id="1">
+                No. 40 Ba Huyen Thanh Quan, District 3, Ho Chi Minh City
+              </p>
+              <p class="l2" data-id="2">
+                No. 4 Le Duan, District 1, Ho Chi Minh City
+              </p>
+            </div>
+          </div>
+
+          <div id="map" class="popup__content__map"></div>
+
+          <svg class="popup__close--icon">
+            <use xlink:href="/assets/icomoon/sprite.svg#icon-cross"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

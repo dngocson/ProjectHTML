@@ -1,0 +1,39 @@
+@use "../abstract/" as *;
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+  &__linebreak {
+    padding-bottom: 0;
+  }
+  &__proposals {
+    font-size: 3rem;
+    transform: translateY(4rem);
+  }
+  &__cards {
+    display: grid;
+
+    grid-template-areas:
+      " one two three"
+      "four five six";
+    grid-gap: 5rem;
+    @media only screen and (max-width: $bp-large) {
+      grid-template-areas:
+        " one two"
+        " three four "
+        " five six ";
+    }
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-areas:
+        " one"
+        " two "
+        " three "
+        " four"
+        " five "
+        " six ";
+    }
+  }
+  padding-bottom: 5rem;
+}
